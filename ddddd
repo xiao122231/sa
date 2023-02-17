@@ -1,0 +1,232 @@
+local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Kavo-Ui/main/Darkrai%20Ui", true))()--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+local Library = DarkraiX:Window("灾难蛋","Stands Awakening免费版本","rbxassetid://7509783315",Enum.KeyCode.RightControl);--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+local OpenUI = Instance.new("ScreenGui")--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+local ImageButton = Instance.new("ImageButton")--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+local UICorner = Instance.new("UICorner")--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+OpenUI.Name = "OpenUI"--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+OpenUI.Parent = game.CoreGui--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+OpenUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+ImageButton.Parent = OpenUI--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+ImageButton.BackgroundColor3 = Color3.fromRGB(0, 255, 255)--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+ImageButton.BackgroundTransparency = 0.500--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+ImageButton.Position = UDim2.new(0.0235790554, 0, 0.466334164, 0)--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+ImageButton.Size = UDim2.new(0.034, 0,0.067, 0)--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+ImageButton.Image = "rbxassetid://7509783315"--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+ImageButton.Draggable = true--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+UICorner.CornerRadius = UDim.new(0, 200)--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+UICorner.Parent = ImageButton--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+ImageButton.MouseButton1Click:Connect(function()--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    DarkraiX:ToggleUi()--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+end)--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+local lp = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+----------------------------------
+Main = Library:Tab("主界面")--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+Auto = Library:Tab("自动类")--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+LocalPlayer = Library:Tab("玩家类")--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+Info = Library:Tab("信息")--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+------------------------------------傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+function AutoRoka()--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+while _G.AutoRoka == true do--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+game:GetService("ReplicatedStorage").ItemEvents.Roka:FireServer()--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+ wait()--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+end--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+end--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+
+function AutoArrow()
+while _G.AutoArrow == true do
+game:GetService("ReplicatedStorage").ItemEvents.Arrow:FireServer()
+wait()
+end
+end
+ 
+function InfDamage()
+while _G.InfDamage == true do
+local args = {
+    [1] = "Alternate",
+    [2] = "RTZ",
+    [3] = true
+ }
+ 
+game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(args))
+wait()
+end
+end
+function LeftArmStandTrails()
+    while _G.LeftArmStandTrails == true do
+        local args = {
+            [1] = game:GetService("Players").LocalPlayer.Character.Stand["Stand Left Arm"].Trail,
+            [2] = true
+        }
+        
+        game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+        wait(0.3)
+    end
+end
+function RightArmStandTrails()
+    while _G.RightArmStandTrails == true do
+        local args = {
+            [1] = game:GetService("Players").LocalPlayer.Character.Stand["Stand Right Arm"].Trail,
+            [2] = true
+        }
+        
+        game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+        wait(0.3)
+    end
+end
+function ShinyArrow()
+while _G.ShinyArrow == true do
+game:GetService("ReplicatedStorage").ItemEvents.ShinyArrow:FireServer()
+wait(0.2)
+end
+end
+
+function FarmBankNote()--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+while _G.FarmBankNote == true do--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+local bk = game.workspace:FindFirstChild("Banknote").Handle--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+if bk and lp then--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+bk.CFrame = lp.CFrame--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+end--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+wait(.1)--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+end--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+end--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+function AutoBlock()--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    while _G.AutoBlock == true do--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    local args = {
+        [1] = "Alternate",--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+        [2] = "Block"--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    }--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+        --傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    game:GetService("ReplicatedStorage").Main.Input:FireServer(unpack(args))--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    wait()--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+end--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+end--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+----------------------------------傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+Main:Seperator("黄镇")--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+Main:Toggle("自动反伤",false,function(value)--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    _G.InfDamage = value--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    InfDamage()--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+end)--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+Main:Seperator("通用")--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+Main:Toggle("减伤",false,function(value)--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    _G.AutoBlock = value--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    AutoBlock()--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+end)--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+-------------------------------
+Auto:Seperator("自动")--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+Auto:Toggle("自动扎箭",false,function(value)--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    _G.AutoArrow = value--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    AutoArrow()--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+end)--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+Auto:Toggle("自动吃果子",false,function(value)--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    _G.AutoRoka = value--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    AutoRoka()--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+end)--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+Auto:Toggle("自动闪耀箭",false,function(value)--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    _G.ShinyArrow = value--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    ShinyArrow()--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+end)--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+--------------------------------傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+LocalPlayer:Seperator("移动")--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+LocalPlayer:Slider("速度",16,200,16,function(value)--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+end)--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+LocalPlayer:Slider("跳跃高度",50,300,50,function(value)--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    if _G.JumpPowerChange == true then--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+        while _G.JumpPowerChange == true do--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = value--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    wait()--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+        end--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    else--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = value--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    end--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+end)--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+LocalPlayer:Button("无限跳",function()--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+end)--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+LocalPlayer:Button("飞行",function()--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    loadstring(game:HttpGet("https://pastebin.com/raw/FxFqtQ8Q", true))()--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+end)--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+LocalPlayer:Button("穿墙",function()--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    NoClipVal = true--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    if not NoClipVal then--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+        if Clipping then--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+            Clipping:Disconnect()--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+        end--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+        return--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    end--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    --傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    Clipping = game:GetService("RunService").Stepped:connect(function()--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    --傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+        for i, v in next, game.Players.LocalPlayer.Character:GetChildren() do--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+        --傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+            if v:IsA("Part") or v:IsA("BasePart") then--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+            --傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+                v.CanCollide = false--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+                --傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+            end--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+            --傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+        end--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+        --傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    end)--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    --傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+end)--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+----------------------傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+Info:Seperator("您的注入器是 : "..identifyexecutor())--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+Info:Seperator("用户 : "..game.Players.LocalPlayer.Name)--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+Info:Button("复制Q群群号",function()--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+    setclipboard("519482628")--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+   --傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+end)--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+---------------------
+--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+local GC = getconnections or get_signal_cons
+--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+	if GC then
+  --傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+		for i,v in pairs(GC(game.Players.LocalPlayer.Idled)) do
+    --傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+			if v["Disable"] then
+      --傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+				v["Disable"](v)
+        --傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+			elseif v["Disconnect"] then
+      --傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+				v["Disconnect"](v)
+        --傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+			end
+      --傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+		end
+    --傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+	else
+  --傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+		game.Players.LocalPlayer.Idled:Connect(function()
+    --傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+			local VirtualUser = game:GetService("VirtualUser")
+      --傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+			VirtualUser:CaptureController()
+ --傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+			VirtualUser:ClickButton2(Vector2.new())
+--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+	end)
+--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+end
+--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+-------------------------------
+game.StarterGui:SetCore("SendNotification", {
+--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+        Title = "欢迎",--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+        Text = "欢迎免费版用户"..game.Players.LocalPlayer.Name "加入游戏"--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+})--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
+--傻逼才会倒卖|FoolAssHole can SKID LOL!!!!!!!!!!!!!!!!!!!!!Bitch
